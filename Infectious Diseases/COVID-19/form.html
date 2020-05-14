@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corona Form</title>
+        <link rel="stylesheet" href="../css/main.css" type="text/css">
+    </head>
+    <body>
+        <!--Navigation Start-->
+       <div id="nav" class="nav">
+          <ul id="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li> <a href="statistics.html">Statistics</a></li> 
+
+          </ul>
+           <input type="search" name="search" placeholder="search">
+       </div>
+
+         <!--Navigation End-->
+
+        <h1 id="top">Coronavirus Form</h1>
+        
+        <ol>
+            <a href="#about"> <li>About the COVID-19 Coronavirus
+             </li></a>
+             <a href="#patient_info"><li>Patient Personal Information
+             </li></a>
+             <a href="#medical_history"><li>Medical History
+             </li></a>
+             <a href="#travel_history"> <li>Travel History
+             </li>  </a>
+              <a href="#current_symptoms"><li>Current Symptoms
+              </li></a>
+        </ol>
+
+
+        <address>
+            245/M/2 Block 6 PECHS Karachi, Pakistan 75400
+            <br />
+            <a href="mailto:farhanaliwaseer@gmail.com">farhanaliwaseer@gmail.com</a>
+        </address>
+        <h2 id="about">About the COVID-19 Coronavirus</h2>
+            <p>
+                To learn more about the COVID-19 Coronavirus, check out the <a href="about.html">about page</a>.
+            </p>
+            
+            <hr />
+            <!--Begin form COVID-19-->
+            <form>
+                <!--PatientInformation Section Start-->
+                <fieldset>
+                     <legend> <h2 id="patient_info">Patient Personal Information</h2></legend> 
+                
+                      <label> First Name:
+                        <input type="text" name="firstname"  maxlength="20" size="30" required="required" /> </label>
+                          <br/>
+                           <br>
+                          <label for="lastname"> Last Name: </label>
+                           <input id="lastname" class="forminput" type="text" name="lastname" maxlength="20" size="30"  required="required" /> </label>
+                         <p>
+                             <label >
+                                 Email Adress:
+                                 <input class="forminput" type="email" name="email" size="30" />
+                             </label>
+                         </p>
+                         
+                           <p>
+                               <label  for=""> Date of Birth:
+                                   <input class="forminput" type="date"  name="dob">
+                               </label>
+                           </p>
+                           
+                           
+                           <p><label> NIC Number:
+                             <input type="password" name="NIC" class="forminput" required="required" malxlength="20" size="30" /> </p>
+                            </label>
+                             <p>
+                             Please tell us about yourself: </p>
+                             <p>  <textarea name="" id="" cols="30" rows="10" class="forminput" required="required">
+                                    Please enter your bio here.
+                                 </textarea>
+                              </p>
+                                  Gender:
+                              </p>
+                                 <p> 
+                                       <label for="male">Male</label>
+                                       <input id="male" type="radio" name="gender" value="male"/>
+                                       <label for="female">Female</label>
+                                       <input id="female" type="radio" name="gender" value="female"/> 
+                                 </p>
+<!--
+                                 <p>
+                                     <label>
+                                         Website:
+                                         <input type="url" name="website" >                                    
+                                     </label>
+                                 </p>
+-->    
+                                 <p>
+                                     Please upload a profile image
+                                     <input type="file" name="picture"/>
+                                     <input type="submit" name="uploadpicture" value="upload">
+                                 </p>
+
+                                </fieldset>
+                            
+                                   <fieldset>
+                                       <legend>                                       
+                                        <h2 id="travel_history">Travel History</h2>
+                                       </legend>
+                                    <p>
+                                        What countries have you recently visited in the past 15 days?
+                                   </p>
+                                    <select name="countries" multiple="multiple" size="5">
+                                       <option >Please Select</option> 
+                                       <option value="pakistan">pakistan</option>
+                                       <option value="usa">United States</option>
+                                       <option value="uk">United Kingdom</option>
+                                       <option value="france">France</option>
+                                       <option value="germany">Germany</option>
+                                       <option value="canada">Canada</option>
+                                   
+                                   
+                                   </select>
+   
+                            </p>
+                                       
+                                   </fieldset>
+                                 
+                       <p> 
+                           <h2 id="current_symptoms">Current Symptoms</h2>
+                            What are current symptoms? 
+                           <input type="checkbox" name="symptoms" value="Sore Throat"/>Sore Throat
+                           <input type="checkbox" name="symptoms" value="Fever"/> Fever
+                           <input type="checkbox" name="symptoms" value="fatigue"/>Fatigue
+                           <input type="checkbox" name="symptoms" value="cough"/>Cough 
+                        </p>
+                        <input class="subimg" type="image" src="Images/submit-button-png-submit-button-png-439.png" width="100" height="30">
+                        <input type="hidden" name="source" value="covid-19">
+                </form>
+        
+    
+        <a href="#top">back to top</a>
+    </body>
+</html>
